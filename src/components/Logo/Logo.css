@@ -1,0 +1,16 @@
+.tilt {
+  background: rgb(60, 50, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(60, 50, 222, 1) 0%,
+    rgba(11, 9, 121, 0.3561799719887955) 17%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-contain {
+  display: flex;
+  justify-content: flex-start;
+}
