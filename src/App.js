@@ -69,7 +69,7 @@ class App extends Component {
     this.setState({
       imageUrl: this.state.input
     });
-    fetch('https://face-recognition-yoih.onrender.com/imageurl', {
+    fetch('https://face-recognition-api-5imm.onrender.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -79,7 +79,7 @@ class App extends Component {
         .then(response => response.json())
         .then(response => {
           if(response){
-            fetch('https://face-recognition-yoih.onrender.com:3000/image', {
+            fetch('https://face-recognition-api-5imm.onrender.com:3000/image', {
               method: 'put',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({
