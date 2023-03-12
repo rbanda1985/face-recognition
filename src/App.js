@@ -88,7 +88,6 @@ class App extends Component {
             })
             .then(response => response.json())
             .then(count => {
-              console.log(count);
               this.setState(Object.assign(this.state.user, {entries: count}))
             })
             .catch(console.log)
@@ -120,7 +119,7 @@ class App extends Component {
           ? 
           <div>
             <Logo />
-            <Rank name={this.state.user.name} entry={this.state.user.entries} />
+            <Rank name={this.state.user.name} entries={this.state.user.entries} />
             <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
             <FaceRecognition box={box} imageUrl={imageUrl}/>
           </div>
